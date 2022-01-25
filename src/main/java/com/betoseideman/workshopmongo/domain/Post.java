@@ -19,7 +19,7 @@ public class Post implements Serializable{
 	@Id
 	private String id;
 	private Date moment;
-	private String tile;
+	private String title;
 	private String body;
 	
 	private AuthorDTO author;
@@ -34,7 +34,7 @@ public class Post implements Serializable{
 		super();
 		this.id = id;
 		this.moment = moment;
-		this.tile = tile;
+		this.title = tile;
 		this.body = body;
 		this.author = author;
 	}
@@ -56,11 +56,11 @@ public class Post implements Serializable{
 	}
 
 	public String getTile() {
-		return tile;
+		return title;
 	}
 
-	public void setTile(String tile) {
-		this.tile = tile;
+	public void setTitle(String tile) {
+		this.title = tile;
 	}
 
 	public String getBody() {
